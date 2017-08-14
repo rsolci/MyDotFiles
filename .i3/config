@@ -203,8 +203,9 @@ bindsym Control+mod1+l exec sh ~/.i3/i3lock.sh
 bindsym Control+mod1+Left move workspace to output left
 bindsym Control+mod1+Right move workspace to output right
 
-bindsym Control+mod1+Shift+2 exec xrandr --output DP-1 --auto --right-of eDP-1
-bindsym Control+mod1+Shift+1 exec xrandr --output DP-1 --off
+bindsym Control+mod1+Shift+0 exec xrandr --output DP-1 --auto --right-of eDP-1
+bindsym Control+mod1+Shift+9 exec xrandr --output DP-1 --off
+bindsym Control+mod1+Shift+8 exec xrandr --output DP-1 --auto --left-of eDP-1
 
 bindsym XF86AudioRaiseVolume exec "amixer -q set Master 2dB+ && pkill -RTMIN+10 i3blocks"
 bindsym XF86AudioLowerVolume exec "amixer -q set Master 2dB- && pkill -RTMIN+10 i3blocks"
