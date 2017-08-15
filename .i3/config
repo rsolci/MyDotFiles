@@ -211,5 +211,7 @@ bindsym XF86AudioRaiseVolume exec "amixer -q set Master 2dB+ && pkill -RTMIN+10 
 bindsym XF86AudioLowerVolume exec "amixer -q set Master 2dB- && pkill -RTMIN+10 i3blocks"
 bindsym XF86AudioMute exec "amixer -q set Master toggle && amixer -q set Headphone toggle && amixer -q set Speaker toggle && pkill -RTMIN+10 i3blocks"
 
+bindsym XF86MonBrightnessUp exec xbright +50
+bindsym XF86MonBrightnessDown exec xbright -50
 
 focus_follows_mouse no
